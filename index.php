@@ -4,9 +4,8 @@ $sectionsDir = $rootDir . '/sections/';
 ?><!DOCTYPE html>
 <html lang="pl">
 <?php require_once $rootDir . '/includes/head.php'; ?>
-<body class="main-bg min-h-screen">
-<div class="safe-area-fill safe-area-fill-top" aria-hidden="true"></div>
-<div class="safe-area-fill safe-area-fill-bottom" aria-hidden="true"></div>
+<body class="min-h-screen">
+<div class="page-content-shell">
 <?php require_once $sectionsDir . 'upper.php'; ?>
 <?php require_once $sectionsDir . 'info_popup.php'; ?>
 
@@ -25,6 +24,7 @@ $sectionsDir = $rootDir . '/sections/';
 </div>
 <?php require_once $sectionsDir . 'video_bg.php'; ?>
 <?php require_once $sectionsDir . 'footer.php'; ?>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
 <script src="assets/js/video_bg_script.js"></script>
