@@ -36,3 +36,26 @@ html, body {
 footer {
     border-bottom: none !important;
 }
+
+@supports (padding-top: env(safe-area-inset-top)) {
+    body::before,
+    body::after {
+        content: "";
+        position: fixed;
+        left: 0;
+        width: 100%;
+        background: var(--color-primary);
+        pointer-events: none;
+        z-index: 9000;
+    }
+
+    body::before {
+        top: 0;
+        height: env(safe-area-inset-top);
+    }
+
+    body::after {
+        bottom: 0;
+        height: env(safe-area-inset-bottom);
+    }
+}
