@@ -58,3 +58,18 @@ footer {
     height: constant(safe-area-inset-bottom);
     height: env(safe-area-inset-bottom);
 }
+
+@media (max-width: 768px) {
+    a,
+    .rsvp-left,
+    .rsvp-right {
+        transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transform-origin: center;
+    }
+
+    a.mobile-scroll-scaled,
+    .rsvp-left.mobile-scroll-scaled,
+    .rsvp-right.mobile-scroll-scaled {
+        transform: scale(1.03);
+    }
+}

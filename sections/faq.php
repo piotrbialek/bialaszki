@@ -5,6 +5,54 @@ if (file_exists($faqFile)) {
     $json = file_get_contents($faqFile);
     $faqData = json_decode($json, true);
 }
+
+/**
+ * Keep FAQ answer safe while allowing minimal inline formatting.
+ */
+$sanitizeFaqAnswer = static function (string $rawAnswer): string {
+    $decoded = htmlspecialchars_decode($rawAnswer, ENT_QUOTES);
+    return strip_tags($decoded, '<b><br>');
+};
+
+/**
+ * Normalize location links from JSON.
+ *
+ * Expected schema:
+ * [
+ *   { "href": "...", "label": "...", "cta": "Prowadź do" }
+ * ]
+ */
+$normalizeLocationLinks = static function ($rawLinks): array {
+    if (!is_array($rawLinks)) {
+        return [];
+    }
+
+    $links = [];
+    foreach ($rawLinks as $rawLink) {
+        if (!is_array($rawLink)) {
+            continue;
+        }
+
+        $href = trim((string)($rawLink['href'] ?? ''));
+        $label = trim((string)($rawLink['label'] ?? ''));
+        if ($href === '' || $label === '') {
+            continue;
+        }
+
+        $cta = trim((string)($rawLink['cta'] ?? 'Prowadź do'));
+        if ($cta === '') {
+            $cta = 'Prowadź do';
+        }
+
+        $links[] = [
+            'href' => $href,
+            'label' => $label,
+            'cta' => $cta,
+        ];
+    }
+
+    return $links;
+};
 ?>
 <section class="faq-section w-full py-8">
     <h2 class="seasons-style questions-text text-2xl font-bold mb-6 text-center">Pytania?</h2>
@@ -17,11 +65,24 @@ if (file_exists($faqFile)) {
                     </div>
                     <div class="century-gothic-style faq-answer text-gray-700">
                         <?php
-                        $answer = $item['a'] ?? '';
-                        // Dekoduj encje HTML i przepuść <a>, <b>, <br>
-                        $answer = htmlspecialchars_decode($answer, ENT_QUOTES);
-                        $answer = strip_tags($answer, '<a><b><br>');
+                        $answer = $sanitizeFaqAnswer((string)($item['a'] ?? ''));
                         echo $answer;
+
+                        $locationLinks = $normalizeLocationLinks($item['links'] ?? null);
+                        if (!empty($locationLinks)) {
+                            echo '<div class="faq-location-links">';
+                            foreach ($locationLinks as $link) {
+                                $safeHref = htmlspecialchars($link['href'], ENT_QUOTES);
+                                $safeLabel = htmlspecialchars($link['label'], ENT_QUOTES);
+                                $safeCta = htmlspecialchars($link['cta'], ENT_QUOTES);
+                                echo '<a href="' . $safeHref . '" target="_blank" rel="noopener" class="faq-location-card">';
+                                echo '<span class="faq-location-card__pin" aria-hidden="true">📍</span>';
+                                echo '<span class="faq-location-card__label">' . $safeLabel . '</span>';
+                                echo '<span class="faq-location-card__cta">' . $safeCta . ' &#8599;</span>';
+                                echo '</a>';
+                            }
+                            echo '</div>';
+                        }
                         ?>
                     </div>
                 </div>
