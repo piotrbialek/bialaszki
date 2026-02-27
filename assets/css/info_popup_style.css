@@ -15,8 +15,6 @@
 }
 
 .info-popup-card {
-    position: relative;
-    overflow: hidden;
     width: min(520px, 92vw);
     background-color: rgba(var(--color-surface-rgb), 0.96);
     border-radius: 10px;
@@ -26,27 +24,9 @@
     text-align: center;
 }
 
-.info-popup-card::before,
-.info-popup-card::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background: var(--color-primary);
-}
-
-.info-popup-card::before {
-    top: 0;
-}
-
-.info-popup-card::after {
-    bottom: 0;
-}
-
 .info-popup-title {
     font-size: 2rem;
-    margin: 6px 0 14px;
+    margin: 0 0 14px;
     letter-spacing: 1px;
 }
 
