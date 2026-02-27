@@ -78,7 +78,7 @@ $normalizeLocationLinks = static function ($rawLinks): array {
                                 echo '<a href="' . $safeHref . '" target="_blank" rel="noopener" class="faq-location-card">';
                                 echo '<span class="faq-location-card__pin" aria-hidden="true">📍</span>';
                                 echo '<span class="faq-location-card__label">' . $safeLabel . '</span>';
-                                echo '<span class="faq-location-card__cta">' . $safeCta . ' &#8599;</span>';
+                                echo '<span class="faq-location-card__cta">' . $safeCta . '</span>';
                                 echo '</a>';
                             }
                             echo '</div>';
