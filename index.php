@@ -1,61 +1,30 @@
 <?php
+$rootDir = __DIR__;
+$sectionsDir = $rootDir . '/sections/';
 ?><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>bialaszki</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
+<html lang="pl">
+<?php require_once $rootDir . '/includes/head.php'; ?>
+<body class="main-bg min-h-screen">
+<?php require_once $sectionsDir . 'upper.php'; ?>
 
-        #countdown {
-            font-size: 3em;
-            font-weight: bold;
-            color: #333;
-            background: #fff;
-            padding: 20px 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-<div id="countdown"></div>
-<script>
-    const targetDate = new Date('2026-06-04T00:00:00');
-    const countdownEl = document.getElementById('countdown');
-
-    function updateCountdown() {
-        const now = new Date();
-        const diff = targetDate - now;
-
-        if (diff <= 0) {
-            countdownEl.textContent = "The date has arrived!";
-            return;
-        }
-
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / (1000 * 60)) % 60);
-        const seconds = Math.floor((diff / 1000) % 60);
-
-        countdownEl.innerHTML =
-            days + " dni<br>" +
-            hours.toString().padStart(2, '0') + " godzin<br>" +
-            minutes.toString().padStart(2, '0') + " minut<br>" +
-            seconds.toString().padStart(2, '0') + " sekund";
-    }
-
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-</script>
+<div class="w-full max-w-screen-md mx-auto flex flex-col items-center justify-center space-y-8 py-8 main-bg">
+    <h2 class="text-3xl font-extrabold text-center text-primary sm:text-4xl mb-8 seasons-style">BiaŁaszki biorą ślub!</h2>
+    <div class="seasons-style text-center">
+        Przed nami wyjątkowy dzień, w którym nie może Was zabraknąć! <br>Marzymy, byście byli z nami! <br>
+        Chcemy wspólnie z Wami rozpocząć nowy rozdział naszej wspólnej historii. <br>
+        Do zobaczenia na parkiecie! <br>Szczegóły znajdziecie poniżej. ❤️
+    </div>
+    <?php require_once $sectionsDir . 'confirm.php'; ?>
+    <?php require_once $sectionsDir . 'photos.php'; ?>
+    <?php require_once $sectionsDir . 'faq.php'; ?>
+    <?php require_once $sectionsDir . 'guests_photos.php'; ?>
+    <!-- <?php //require_once $sectionsDir . 'countdown_view.php'; ?> -->
+</div>
+<?php require_once $sectionsDir . 'video_bg.php'; ?>
+<?php require_once $sectionsDir . 'footer.php'; ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
+<script src="assets/js/video_bg_script.js"></script>
 </body>
+<link rel="stylesheet" href="assets/css/video_bg_style.css">
 </html>

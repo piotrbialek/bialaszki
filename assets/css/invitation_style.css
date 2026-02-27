@@ -1,0 +1,228 @@
+.invitation-card {
+    background-color: rgba(255,255,255,0.85); /* semi-transparent white */
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    padding: 40px 30px;
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.month {
+    font-size: 2.0rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #8b6b4c;
+    text-transform: uppercase;
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.day-name, .time {
+    flex: 1;
+    padding: 15px 0;
+    position: relative;
+    font-size: 1.8rem
+}
+
+.day-name::before, .day-name::after,
+.time::before, .time::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #271c12;
+}
+
+.day-name::before, .time::before {
+    top: 0;
+}
+
+.day-name::after, .time::after {
+    bottom: 0;
+}
+
+.day-name {
+    text-align: center;
+    padding-left: 15px;
+    letter-spacing: 2px;
+}
+
+.time {
+    text-align: center;
+    padding-right: 15px;
+    letter-spacing: 1px;
+}
+
+.day-number {
+    font-size: 3.5rem;
+    font-weight: normal;
+    margin: 0 20px;
+    color: #333;
+}
+
+.year {
+    font-size: 2.0rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #8b6b4c;
+    letter-spacing: 2px;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+}
+
+.events-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.event-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: #271c12;
+    height: 100%;
+    min-height: 180px;
+    margin: 0 10px;
+}
+
+.event-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.location {
+    text-align: center;
+}
+
+.location-name {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /*margin-bottom: 8px;*/
+    color: #8b6b4c;
+}
+
+.location-desc {
+    font-size: 1.3rem;
+    /*margin-bottom: 8px;*/
+    color: #666;
+    font-style: italic;
+    min-height: 80px;
+}
+
+.location-address {
+    font-size: 1.2rem;
+    color: #777;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    min-height: 80px;
+}
+
+.events-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+    /* Optionally, use negative margin if you want it even closer */
+    /* margin-top: -8px; */
+}
+
+.events-footer .click {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .invitation-card {
+        padding: 20px 15px;
+    }
+
+    .month {
+        font-size: 1.8rem;
+        letter-spacing: 6px;
+    }
+
+    .day-number {
+        font-size: 2.8rem;
+    }
+
+    .year {
+        font-size: 1.2rem;
+    }
+
+    .event-title {
+        font-size: 1.8rem;
+    }
+
+    .location-name {
+        font-size: 1.1rem;
+    }
+
+    .location-desc {
+        font-size: 1.1rem;
+    }
+
+    .location-address {
+        font-size: 1rem;
+    }
+
+    .vertical-divider {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .invitation-card {
+        padding: 20px 15px;
+    }
+
+    .month {
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+    }
+
+    .day-name, .time {
+        font-size: 0.9rem;
+    }
+
+    .day-number {
+        font-size: 2.2rem;
+    }
+
+    .year {
+        font-size: 1.2rem;
+    }
+
+    .event-title {
+        font-size: 1.6rem;
+    }
+
+    .vertical-divider {
+        min-height: 140px;
+    }
+}

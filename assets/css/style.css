@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* zapobiega przewijaniu w bok */
+}
+
+.bg-primary {
+    background-color: #333a1c;
+}
+
+.main-color {
+    color: #271c12;
+}
+
+.footer-text {
+    color: #17100a;
+    margin-left: 10px;
+}
+
+.main-bg {
+    background-color: #f8fbec;
+}
+
+footer {
+    border-bottom: none !important;
+}

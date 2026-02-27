@@ -1,0 +1,99 @@
+/* RSVP/Confirm section custom styles */
+.contact {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.rsvp-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.rsvp-desc {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.rsvp-date {
+    font-size: 1.6rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.confirm-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.rsvp-options {
+    max-width: 900px;
+    gap: 2.5rem;
+}
+
+.rsvp-left,
+.rsvp-right {
+    padding: 3rem 2rem;
+    min-height: 320px;
+    margin: 5px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.rsvp-img-wrapper {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rsvp-img {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    margin: 20px;
+}
+
+.phone-number {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .rsvp-img {
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .contact {
+        font-size: 1.2rem;
+    }
+    .rsvp-title {
+        font-size: 2rem;
+    }
+    .rsvp-desc {
+        font-size: 1rem;
+    }
+    .rsvp-left,
+    .rsvp-right {
+        padding: 1.5rem 0.5rem;
+        min-height: 200px;
+    }
+    .rsvp-options {
+        gap: 1rem;
+    }
+    .phone-number {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .phone-number {
+        font-size: 0.9rem;
+    }
+}

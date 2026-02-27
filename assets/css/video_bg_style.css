@@ -1,0 +1,43 @@
+#video-bg {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+#bgndVideo.player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.video-bg-section {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Blur effect for the YTPlayer video */
+#video-bg .mb_YTPlayer {
+    filter: blur(8px);
+    transition: filter 0.3s;
+}
+
+/* Overlay for darkening the video */
+.video-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35); /* semi-transparent black */
+    z-index: 2;
+    pointer-events: none;
+}

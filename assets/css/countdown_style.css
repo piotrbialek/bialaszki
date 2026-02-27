@@ -1,0 +1,82 @@
+/*body {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: 10vh;*/
+/*    margin: 0;*/
+/*    font-family: Arial, sans-serif;*/
+/*    background-color: #f0f0f0;*/
+/*}*/
+
+/*@import "fonts_style.css";*/
+
+#countdown {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+    text-align: center;
+    margin-top: 30px;
+}
+
+.countdown-label {
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.4em;
+}
+
+.countdown-number {
+    color: #271c12;
+    font-weight: bold;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: "Cousine", monospace;
+    /*font-variant-numeric: tabular-nums;*/
+    font-size: 2.0rem;
+}
+
+@media (max-width: 600px) {
+    #countdown {
+        padding: 20px 10px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .countdown-number {
+        font-size: 1.5rem;
+    }
+}
+
+.countdown-label-days {
+    color: #b71c1c;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+.countdown-hours {
+    color: #1976d2;
+    font-weight: bold;
+}
+.countdown-label-hours {
+    color: #0d47a1;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+.countdown-minutes {
+    color: #388e3c;
+    font-weight: bold;
+}
+.countdown-label-minutes {
+    color: #1b5e20;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+.countdown-seconds {
+    color: #fbc02d;
+    font-weight: bold;
+}
+.countdown-label-seconds {
+    color: #f57c00;
+    font-size: 0.8em;
+}

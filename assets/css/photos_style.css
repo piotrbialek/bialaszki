@@ -1,0 +1,15 @@
+/* Delikatny cień dla miniaturek w galerii */
+.gallery-photo-shadow {
+    box-shadow: 0 10px 16px rgba(0,0,0,0.10);
+    /*transition: box-shadow 0.2s;*/
+    border-radius: 16px;
+}
+.gallery-photo-shadow:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+/* Zaokrąglone rogi dla zdjęć w fancybox */
+.fancybox__image {
+    border-radius: 16px !important;
+}
+
