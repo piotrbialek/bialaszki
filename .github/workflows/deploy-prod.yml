@@ -19,6 +19,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /bialaszki/
           local-dir: ./
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
             **/.github*

@@ -54,14 +54,14 @@ $appleCalendarLink = $appleEvent->createAppleCalendarLink(
             <div id="calendar-icons" class="mt-4 flex justify-center gap-4">
                 <span class="calendar-tooltip">
                     <a href="<?php echo $googleCalendarLink ?>" target="_blank">
-                        <img src="/assets/images/google_calendar_icon.png" alt="Google Calendar Icon" class="calendar-icon">
+                        <img src="/assets/images/google_calendar_icon2.png" alt="Google Calendar Icon" class="calendar-icon">
                     </a>
                     <span class="tooltip-text">Zapisz w Kalendarzu Google</span>
                 </span>
                 <span class="paris-script-style click-text">Kliknij i zapisz w kalendarzu!</span>
                 <span class="calendar-tooltip">
                     <a href="<?php echo $appleCalendarLink; ?>" download="event.ics">
-                        <img src="/assets/images/apple-calendar-icon.png" alt="Apple Calendar Icon" class="calendar-icon">
+                        <img src="/assets/images/4czerwcaApple.png" alt="Apple Calendar Icon" class="calendar-icon">
                     </a>
                     <span class="tooltip-text">Zapisz w Kalendarzu Apple</span>
                 </span>
@@ -69,32 +69,3 @@ $appleCalendarLink = $appleEvent->createAppleCalendarLink(
         </div>
     </div>
 </div>
-<script>
-// Mobile scroll effect for calendar icons
-(function() {
-    const iconsContainer = document.getElementById('calendar-icons');
-    if (!iconsContainer) return;
-    function scaleIcons(scale) {
-        iconsContainer.querySelectorAll('.calendar-icon').forEach(icon => {
-            if (scale) {
-                icon.classList.add('calendar-icon-scaled');
-            } else {
-                icon.classList.remove('calendar-icon-scaled');
-            }
-        });
-    }
-    let ticking = false;
-    window.addEventListener('scroll', function() {
-        if (window.innerWidth > 768) return;
-        if (!ticking) {
-            window.requestAnimationFrame(function() {
-                scaleIcons(true);
-                clearTimeout(window._calendarIconTimeout);
-                window._calendarIconTimeout = setTimeout(() => scaleIcons(false), 350);
-                ticking = false;
-            });
-            ticking = true;
-        }
-    }, { passive: true });
-})();
-</script>
