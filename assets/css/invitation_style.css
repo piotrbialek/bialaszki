@@ -3,6 +3,7 @@
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     padding: 40px 30px;
+    margin: 6px auto;
     max-width: 900px;
     width: 100%;
     text-align: center;
@@ -117,6 +118,66 @@
 
 .location {
     text-align: center;
+    width: 100%;
+}
+
+.location-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.85rem 0.7rem;
+    border: 2px solid rgba(var(--color-main-text-rgb), 0.22);
+    border-radius: 12px;
+    background: rgba(var(--color-surface-rgb), 0.72);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    min-height: 44px;
+    transition: background-color 150ms ease, box-shadow 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.location-link:hover {
+    border-color: rgba(var(--color-main-text-rgb), 0.45);
+    background: rgba(var(--color-surface-rgb), 0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.location-link:focus-visible {
+    outline: 3px solid rgba(var(--color-primary-rgb), 0.55);
+    outline-offset: 2px;
+    border-color: rgba(var(--color-main-text-rgb), 0.5);
+}
+
+.location-link:active {
+    transform: translateY(0);
+    background: rgba(var(--color-surface-rgb), 0.96);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-link__pin {
+    font-size: 1.15rem;
+    line-height: 1;
+    margin-top: 0.15rem;
+}
+
+.location-link__cta {
+    margin-top: 0.1rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 0.62rem;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.location-link__cta::after {
+    content: " \2197";
 }
 
 .location-name {
@@ -193,6 +254,16 @@
 
     .vertical-divider {
         min-height: 160px;
+    }
+}
+
+@media (min-width: 601px) {
+    .location-link {
+        padding: 1rem 1rem;
+    }
+
+    .location-link__cta {
+        font-size: 0.5rem;
     }
 }
 

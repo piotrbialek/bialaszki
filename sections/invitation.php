@@ -11,16 +11,15 @@
             <div class="event-column">
                 <div class="event-title seasons-style">Ślub</div>
                 <div class="location">
-                    <a href="https://maps.app.goo.gl/8HWiVVNvBoEcM3617" target="_blank" rel="noopener">
+                    <a href="https://maps.app.goo.gl/8HWiVVNvBoEcM3617" target="_blank" rel="noopener"
+                       class="location-link" aria-label="Prowadź na ślub">
                         <div class="location-name century-gothic-style main-color">BAZYLIKA</div>
                         <div class="location-desc century-gothic-style">Wniebowzięcia Najświętszej Maryi Panny</div>
 <!--                        <div class="location-desc century-gothic-style">Maryi Panny</div>-->
                         <div class="location-address century-gothic-style">ul. Cysterska 1, RUDY</div>
 <!--                        <div class="location-address"><br></div>-->
-                        📍⛪
-                        <div class="text-blue-500 hover:underline">
-                            Prowadź do ołtarza!
-                        </div>
+                        <div class="location-link__pin" aria-hidden="true">📍⛪</div>
+                        <div class="location-link__cta">Prowadź na ślub</div>
                     </a>
                 </div>
             </div>
@@ -28,19 +27,18 @@
             <div class="event-column">
                 <div class="event-title seasons-style">Wesele</div>
                 <div class="location">
+                    <a href="https://maps.app.goo.gl/oHs75xT4r5pyX9uS8"
+                       target="_blank" rel="noopener"
+                       class="location-link" aria-label="Prowadź na wesele w restauracji Rudy Las">
+                        <div class="location-name century-gothic-style main-color">RESTAURACJA</div>
+                        <div class="location-desc century-gothic-style">Rudy Las</div>
+<!--                    <div class="location-address"><br></div>-->
+                        <div class="location-address century-gothic-style">ul. Szkolna 8, RUDY</div>
+<!--                    <div class="location-address"><br></div>-->
+                        <div class="location-link__pin" aria-hidden="true">📍🎉</div>
+                        <div class="location-link__cta">Prowadź na wesele</div>
+                    </a>
                 </div>
-                <a href="https://maps.app.goo.gl/oHs75xT4r5pyX9uS8"
-                   target="_blank" rel="noopener">
-                    <div class="location-name century-gothic-style main-color">RESTAURACJA</div>
-                    <div class="location-desc century-gothic-style">Rudy Las</div>
-<!--                    <div class="location-address"><br></div>-->
-                    <div class="location-address century-gothic-style">ul. Szkolna 8, RUDY</div>
-<!--                    <div class="location-address"><br></div>-->
-                    📍🎉
-                    <div class="text-blue-500 hover:underline">
-                        Prowadź na zabawę!
-                    </div>
-                </a>
             </div>
         </div>
     </div>

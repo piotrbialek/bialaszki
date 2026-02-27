@@ -17,7 +17,24 @@
   },
   {
     "q": "🚗 Czy będzie dostępny parking?",
-    "a": "Tak, przed samym kościołem, a także wzdłóż ulicy i obok jeziorka znajdują się miejsca parkingowe. Przed salą Rudy Las również znajduje się duży parking. Pamiętaj, że to święto (Boże Ciało) i może być mało wolnych miejsc pod kościołem! 🅿️ <br><br><a href=\"https://maps.app.goo.gl/mjiUvTRKr72wtyW58\" target=\"_blank\" rel=\"noopener\"><b>Parking przed kościołem</b></a><br><br><a href=\"https://maps.app.goo.gl/UjWJcwsUJpPPThtQ6\" target=\"_blank\" rel=\"noopener\"><b>Parking wzdłuż ulicy</b></a><br><br><a href=\"https://maps.app.goo.gl/msWQY9gXSz1uJ2ic9\" target=\"_blank\" rel=\"noopener\"><b>Parking za jeziorkiem</b></a>"
+    "a": "Tak, przed samym kościołem, a także wzdłóż ulicy i obok jeziorka znajdują się miejsca parkingowe. Przed salą Rudy Las również znajduje się duży parking. Pamiętaj, że to święto (Boże Ciało) i może być mało wolnych miejsc pod kościołem! 🅿️",
+    "links": [
+      {
+        "href": "https://maps.app.goo.gl/mjiUvTRKr72wtyW58",
+        "label": "Parking przed kościołem",
+        "cta": "Prowadź"
+      },
+      {
+        "href": "https://maps.app.goo.gl/UjWJcwsUJpPPThtQ6",
+        "label": "Parking wzdłuż ulicy",
+        "cta": "Prowadź"
+      },
+      {
+        "href": "https://maps.app.goo.gl/msWQY9gXSz1uJ2ic9",
+        "label": "Parking za jeziorkiem",
+        "cta": "Prowadź"
+      }
+    ]
   },
   {
     "q": "📸 Czy mogę robić zdjęcia w trakcie ceremonii?",
@@ -37,7 +54,14 @@
   },
   {
     "q": "👑 Czy i kiedy będziemy 'wić koronę'?",
-    "a": "Oczywiście, że tak! Zgodnie z tradycją koronę wije się przed weselem. Zapraszamy <b>30 maja 2026</b> do <a href=\"https://maps.app.goo.gl/LcAFbpyJvDQV2o879\" target=\"_blank\" rel=\"noopener\"><b>Łaz na ulicę Folwarczną 1</b></a>, szczegóły wkrótce! \uD83E\uDD42"
+    "a": "Oczywiście, że tak! Zgodnie z tradycją koronę wije się przed weselem. Zapraszamy <b>30 maja 2026</b> do <b>Łaz na ulicę Folwarczną 1</b>, szczegóły wkrótce! \uD83E\uDD42",
+    "links": [
+      {
+        "href": "https://maps.app.goo.gl/LcAFbpyJvDQV2o879",
+        "label": "Łazy, Folwarczna 1",
+        "cta": "Prowadź na koronę"
+      }
+    ]
   },
   {
     "q": "🦶🦶 Czy mogę tańczyć, jeśli mam dwie lewe nogi?",

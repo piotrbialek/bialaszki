@@ -10,7 +10,7 @@ $sectionsDir = $rootDir . '/sections/';
 <?php require_once $sectionsDir . 'upper.php'; ?>
 <?php require_once $sectionsDir . 'info_popup.php'; ?>
 
-<div class="w-full max-w-screen-md mx-auto flex flex-col items-center justify-center space-y-8 py-8 main-bg">
+<div class="information w-full max-w-screen-md mx-auto flex flex-col items-center justify-center space-y-8 py-8 main-bg">
     <h2 class="text-3xl font-extrabold text-center text-primary sm:text-4xl mb-8 seasons-style">BiaŁaszki biorą ślub!</h2>
     <div class="seasons-style text-center">
         Przed nami wyjątkowy dzień, w którym nie może Was zabraknąć! <br>Marzymy, byście byli z nami! <br>
