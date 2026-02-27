@@ -5,6 +5,8 @@ $sectionsDir = $rootDir . '/sections/';
 <html lang="pl">
 <?php require_once $rootDir . '/includes/head.php'; ?>
 <body class="main-bg min-h-screen">
+<div class="safe-area-fill safe-area-fill-top" aria-hidden="true"></div>
+<div class="safe-area-fill safe-area-fill-bottom" aria-hidden="true"></div>
 <?php require_once $sectionsDir . 'upper.php'; ?>
 <?php require_once $sectionsDir . 'info_popup.php'; ?>
 

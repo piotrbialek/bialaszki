@@ -54,14 +54,14 @@ $appleCalendarLink = $appleEvent->createAppleCalendarLink(
             <div id="calendar-icons" class="mt-4 flex justify-center gap-4">
                 <span class="calendar-tooltip">
                     <a href="<?php echo $googleCalendarLink ?>" target="_blank">
-                        <img src="/assets/images/google_calendar_icon.png" alt="Google Calendar Icon" class="calendar-icon">
+                        <img src="/assets/images/google_calendar_icon2.png" alt="Google Calendar Icon" class="calendar-icon">
                     </a>
                     <span class="tooltip-text">Zapisz w Kalendarzu Google</span>
                 </span>
                 <span class="paris-script-style click-text">Kliknij i zapisz w kalendarzu!</span>
                 <span class="calendar-tooltip">
                     <a href="<?php echo $appleCalendarLink; ?>" download="event.ics">
-                        <img src="/assets/images/apple-calendar-icon.png" alt="Apple Calendar Icon" class="calendar-icon">
+                        <img src="/assets/images/4czerwcaApple.png" alt="Apple Calendar Icon" class="calendar-icon">
                     </a>
                     <span class="tooltip-text">Zapisz w Kalendarzu Apple</span>
                 </span>
