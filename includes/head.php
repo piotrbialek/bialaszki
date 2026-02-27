@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="/assets/css/confirm_style.css">
     <link rel="stylesheet" href="/assets/css/photos_style.css">
     <link rel="stylesheet" href="/assets/css/faq_style.css">
+    <link rel="stylesheet" href="/assets/css/info_popup_style.css">
     <link rel="icon" type="image/png" href="/assets/images/logo-slub-modified.png" />
     <script src="/assets/js/date_icons_scale.js"></script>
+    <script src="/assets/js/info_popup.js" defer></script>
 
     <!-- Tailwind CSS CDN import -->
     <script src="https://cdn.tailwindcss.com"></script>
