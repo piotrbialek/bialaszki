@@ -42,6 +42,14 @@ body {
     background-color: var(--color-main-bg);
 }
 
+.info {
+    width: 100%;
+    max-width: 60ch;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    line-height: 1.55;
+}
+
 footer {
     border-bottom: none !important;
 }
@@ -55,6 +63,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .info {
+        padding-inline: 1.4rem;
+    }
+
     a,
     .rsvp-left,
     .rsvp-right {

@@ -11,7 +11,7 @@ $sectionsDir = $rootDir . '/sections/';
 
 <div class="information w-full max-w-screen-md mx-auto flex flex-col items-center justify-center space-y-8 py-8 main-bg">
     <h2 class="text-3xl font-extrabold text-center text-primary sm:text-4xl mb-8 seasons-style">BiaŁaszki biorą ślub!</h2>
-    <div class="seasons-style text-center">
+    <div class="info seasons-style text-center">
         Przed nami wyjątkowy dzień, w którym nie może Was zabraknąć! <br>Marzymy, byście byli z nami! <br>
         Chcemy wspólnie z Wami rozpocząć nowy rozdział naszej wspólnej historii. <br>
         Do zobaczenia na parkiecie! <br>Szczegóły znajdziecie poniżej. ❤️
