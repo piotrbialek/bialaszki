@@ -50,7 +50,6 @@ $appleCalendarLink = $appleEvent->createAppleCalendarLink(
     <div class="container">
         <div class="mt-8 text-center">
 
-<!--            TODO: super gdyby ikonki miały wewnątrz faktycznie datę 4 VI-->
             <div id="calendar-icons" class="mt-4 flex justify-center gap-4">
                 <span class="calendar-tooltip">
                     <a href="<?php echo $googleCalendarLink ?>" target="_blank">
