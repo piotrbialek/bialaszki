@@ -21,17 +21,17 @@
     "links": [
       {
         "href": "https://maps.app.goo.gl/mjiUvTRKr72wtyW58",
-        "label": "Parking przed Bazyliką",
+        "label": "Parking przed Bazyliką (płatny 4zł/h)",
         "cta": "Prowadź"
       },
       {
         "href": "https://maps.app.goo.gl/UjWJcwsUJpPPThtQ6",
-        "label": "Parking wzdłuż ulicy",
+        "label": "Parking wzdłuż ulicy (bezpłatny)",
         "cta": "Prowadź"
       },
       {
         "href": "https://maps.app.goo.gl/msWQY9gXSz1uJ2ic9",
-        "label": "Parking za jeziorkiem",
+        "label": "Parking za jeziorkiem (bezpłatny)",
         "cta": "Prowadź"
       }
     ]
@@ -50,11 +50,27 @@
   },
   {
     "q": "🏨 Czy zapewniamy nocleg?",
-    "a": "Tak, dla przyjezdnych Gości mamy wstępnie zarezerwowane noclegi. Prosimy o informację jeżeli potrzebujecie noclegu. Szczegóły prześlemy bliżej terminu ślubu. Nie martwcie się - będzie możliwe wcześniejsze zakwaterowanie :) 🛏️"
+    "a": "Tak, dla przyjezdnych Gości mamy zarezerwowane noclegi. Prosimy o informację jeżeli potrzebujecie noclegu. Udało się załatwić wcześniejsze zakwaterowanie, możecie być w hotelu przed 12:00 i na spokojnie się przygotować. Rano będzie czekać na Was śniadanie. W przypadku noclegu dla Znajomych: nie ma recepcji, trzeba podejjść do Restauracji Cysterskiej obok 🛏️",
+    "links": [
+      {
+        "href": "https://maps.app.goo.gl/MvZCSF6ix6pfNUrc9",
+        "label": "Nocleg dla Rodziny (Hotel Laskowo)",
+        "cta": "Pokaż na mapie"
+      },
+      {
+        "href": "https://maps.app.goo.gl/yAhTASgXfk3BujpZ8",
+        "label": "Nocleg dla Znajomych (Dom Pielgrzyma)",
+        "cta": "Pokaż na mapie"
+      }
+    ]
+  },
+  {
+    "q": "\uD83D\uDE8C Jak z transportem?",
+    "a": "Do kościoła i na salę musicie się dostać sami, ale to niedaleko, można nawet spacerkiem :) Zapewnimy transport z wesela do hotelu, z hotelu na poprawiny, a także z poprawin do hotelu. Wskazówka: najlepiej zostawić samochód pod salą weselną Rudy Las, a potem skorzystać z transportu, który będzie kursował między hotelem a salą. 🚐"
   },
   {
     "q": "👑 Czy i kiedy będziemy 'wić koronę'?",
-    "a": "Oczywiście, że tak! Zgodnie z tradycją koronę wije się przed ślubem. Zapraszamy <b>30 maja 2026 (sobota)</b> do <b>Łaz na ulicę Folwarczną 1</b>, szczegóły wkrótce! \uD83E\uDD42",
+    "a": "Oczywiście, że tak! Zgodnie z tradycją koronę wije się przed ślubem. Zapraszamy <b>30 maja 2026 (sobota)</b> do <b>Łaz na ulicę Folwarczną 1</b>! Obowiązuje luźny strój, deszcz i śnieg nam nie straszne, bo będzie namiot :) Dzieci również mile widziane! Weźcie ze sobą duuużo uśmiechu i dobry humor, my zapewnimy resztę  \uD83E\uDD42",
     "links": [
       {
         "href": "https://maps.app.goo.gl/LcAFbpyJvDQV2o879",
