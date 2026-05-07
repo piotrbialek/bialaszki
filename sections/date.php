@@ -19,7 +19,7 @@ ul. Szkolna 8,
 
 
 $location = "Bazylika Matki Bożej Pokornej w Rudach, Rzymskokatolicka Parafia Wniebowzięcia NMP ul. Cysterska 1, 47-430 Rudy";
-$startDateTime = "2026-06-04 13:30:00";
+$startDateTime = "2026-06-04 14:00:00";
 $endDateTime = "2026-06-05 05:00:00";
 $timezone = "Europe/Warsaw";
 
