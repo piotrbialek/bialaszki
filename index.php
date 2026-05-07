@@ -14,7 +14,7 @@ $sectionsDir = $rootDir . '/sections/';
     <div class="info seasons-style text-center">
         Przed nami wyjątkowy dzień, w którym nie może Was zabraknąć! <br>Marzymy, byście byli z nami! <br>
         Chcemy wspólnie z Wami rozpocząć nowy rozdział naszej wspólnej historii. <br>
-        Do zobaczenia na parkiecie! <br>Szczegóły znajdziecie poniżej. ❤️
+        Do zobaczenia przy ołtarzu i na parkiecie! <br>Szczegóły znajdziecie poniżej. ❤️
     </div>
     <?php require_once $sectionsDir . 'confirm.php'; ?>
     <?php require_once $sectionsDir . 'photos.php'; ?>

@@ -1,5 +1,5 @@
 const targetDate = '2026-06-04';
-const weddingTime = '13:30:00';
+const weddingTime = '14:00:00';
 
 function getTimeZoneOffsetMs(date, timeZone) {
     const dtf = new Intl.DateTimeFormat('en-US', {

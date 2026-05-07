@@ -3,7 +3,7 @@
     <div class="date-container">
         <div class="day-name seasons-style ">CZWARTEK</div>
         <div class="day-number seasons-style">04</div>
-        <div class="time seasons-style">GODZ. 13:30</div>
+        <div class="time seasons-style">GODZ. 14:00</div>
     </div>
     <div class="year seasons-style main-color">2026</div>
     <div class="events-container">
